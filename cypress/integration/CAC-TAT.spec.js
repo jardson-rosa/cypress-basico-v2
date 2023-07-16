@@ -216,7 +216,7 @@ describe("Central de Atendimento ao Cliente TAT", function () {
     });
   });
 
-  it.only("desfaio encontre o gato", () => {
+  it("desfaio encontre o gato", () => {
     cy.get("#cat").should("not.be.visible").invoke("show").should("be.visible");
   });
 });
